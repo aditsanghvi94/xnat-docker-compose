@@ -37,12 +37,13 @@ services:
   xnat-nginx:
     build: ./nginx
     ports:
-      - "80:80"
+      - "443:443"
+    volumes:
+      - /Users/sanghvia/Desktop/projects/opthai/xnat-docker-compose/nginx/ssl:/etc/ssl/xnat
     expose:
-      - "80"
+      - "443"
     links:
       - xnat-web
-
   # prometheus:
   #   image: prom/prometheus
   #   volumes:
