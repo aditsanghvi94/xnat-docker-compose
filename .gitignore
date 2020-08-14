@@ -6,3 +6,4 @@ xnat/plugins
 *.log
 .gradle/
 manifest.json
+*.DS_Store
