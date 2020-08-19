@@ -7,3 +7,4 @@ xnat/plugins
 .gradle/
 manifest.json
 *.DS_Store
+nginx/ssl/.DS_Store
