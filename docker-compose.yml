@@ -39,7 +39,8 @@ services:
     ports:
       - "443:443"
     volumes:
-      - /Users/sanghvia/Desktop/projects/opthai/xnat-docker-compose/nginx/ssl:/etc/ssl/xnat
+      - ./nginx/ssl:/etc/ssl/xnat
+      #- /Users/sanghvia/Desktop/projects/opthai/xnat-docker-compose/nginx/ssl:/etc/ssl/xnat
     expose:
       - "443"
     links:
